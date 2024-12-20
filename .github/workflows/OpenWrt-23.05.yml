@@ -7,7 +7,7 @@
 #                https://downloads.immortalwrt.org/releases
 #=====================================================================================
 
-name: OpenWrt-23.05
+name: OpenWrt-23.05 and ImmortalWrt-23.05
 
 on:
   repository_dispatch:
@@ -16,16 +16,11 @@ on:
       releases_branch:
         description: "Select the releases branch"
         required: false
-        default: "openwrt:23.05.3"
+        default: "openwrt:23.05.5"
         type: choice
         options:
-          - openwrt:23.05.3
-          - openwrt:23.05.2
-          - openwrt:23.05.1
-          - openwrt:23.05.0
-          - immortalwrt:23.05.2
-          - immortalwrt:23.05.1
-          - immortalwrt:23.05.0
+          - openwrt:23.05.5
+          - immortalwrt:23.05.4
       openwrt_board:
         description: "Select device board"
         required: false
